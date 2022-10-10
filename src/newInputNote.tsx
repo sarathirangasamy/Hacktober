@@ -24,6 +24,12 @@ const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
         name="name"
         placeholder="Note"
       />
+         <input
+        onChange={updateNote}
+        type="text"
+        name="email"
+        placeholder="Note"
+      />
       <button onClick={onAddNoteClick}>Add Note</button>
     </>
   );
