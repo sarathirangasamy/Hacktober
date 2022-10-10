@@ -13,7 +13,7 @@ const NewNoteInput: React.FC<NewNoteInputProps> = ({ addNote }) => {
 
   const onAddNoteClick = () => {
     addNote(note);
-    setNote("");
+    setNote("oyo kavin oyo");
   };
   return (
     <div>
