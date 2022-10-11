@@ -30,6 +30,9 @@ function App() {
           return <li key={note}>{note}</li>;
         })}
       </ol>
+      <h2>Example of center tag</h2>  
+    <center>This content is displayed in the middle of page, but try to use CSS property to align the content as this tag is deprecated now.</center>  
+
     </div>
   );
 }
