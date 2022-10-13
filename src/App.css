@@ -35,6 +35,13 @@ body {
   background-repeat: no-repeat;
 }
 
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
