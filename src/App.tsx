@@ -31,6 +31,7 @@ function App() {
         })}
       </ol>
       <h2>Example of center tag</h2>  
+      <p>Do not forget to buy <mark>milk</mark> today.</p>
     <center>This content is displayed in the middle of page, but try to use CSS property to align the content as this tag is deprecated now.</center>  
 
     </div>
