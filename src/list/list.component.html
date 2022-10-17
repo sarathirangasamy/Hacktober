@@ -1,0 +1,28 @@
+<button (click)="create_page = 1" [ngClass]="create_page ? 'dnone' : ''" class="btn btn-primary btn-sm pull-right">Create</button>
+<button (click)="create_page = 0"  [ngClass]="!create_page ? 'dnone' : ''" class="btn btn-info btn-sm pull-right">View</button>
+<!-- <app-create [ngClass]="!create_page ? 'dnone' : ''" [childMessage]="childMessage" (showTable)="someFunction($event)"></app-create> -->
+  <!-- <app-create [hidden]="!create_page" [editData]="editData" (showTable)="someFunction($event)"></app-create> -->
+<app-create *ngIf="create_page" [editData]="editData" (showTable)="someFunction($event)"></app-create>
+<a href="#" [routerLink]="['/crud_create',1]" [ngClass]="'btn btn-success btn-sm getLink'">Link get Method</a>
+
+<table [ngClass]="create_page ? 'dnone' : ''" class="table table-bordered">
+    <thead>
+      <tr class="active">
+        <th>Firstname</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employee_list">
+        <td>{{employee.employee_name}}</td>
+        <td>{{employee['employee_salary']}}</td>
+        <td>{{employee['employee_age']}}</td>
+        <td>
+          <button (click)="edit(employee['id'])" class="btn btn-info btn-sm">Edit</button>
+          <button (click)="delete(employee['id'])" class="btn btn-danger btn-sm">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
