@@ -9,13 +9,4 @@ export type AddNoteAction = {
   });
   
 
-  export type UpdateNoteAction = {
-    type: "UPDATE_NOTE";
-    payload: string;
-  };
-  
-  export const updateNote = (note: string): UpdateNoteAction => ({
-    type: "UPDATE_NOTE",
-    payload: note
-  });
   
